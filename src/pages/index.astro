@@ -29,4 +29,85 @@
         <p>If you would like to purchase an email address, please email: <a href="mailto:get_an_email@thefamilyplan.xyz">get_an_email@thefamilyplan.xyz</a></p>
     </div>
 </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smiley with Rainbow</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #e0f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+    }
+
+    .rainbow {
+      position: relative;
+      width: 300px;
+      height: 150px;
+      border-radius: 150px 150px 0 0;
+      background: conic-gradient(
+        red 0deg 60deg,
+        orange 60deg 120deg,
+        yellow 120deg 180deg,
+        green 180deg 240deg,
+        blue 240deg 300deg,
+        indigo 300deg 330deg,
+        violet 330deg 360deg
+      );
+      margin-bottom: -50px;
+    }
+
+    .smiley {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 0 0 20px #888;
+    }
+
+    .eye {
+      width: 20px;
+      height: 20px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 60px;
+    }
+
+    .eye.left {
+      left: 50px;
+    }
+
+    .eye.right {
+      right: 50px;
+    }
+
+    .smile {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      width: 100px;
+      height: 50px;
+      margin-left: -50px;
+      border-bottom: 5px solid black;
+      border-radius: 0 0 50px 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="rainbow"></div>
+  <div class="smiley">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="smile"></div>
+  </div>
+</body>
 </html>
