@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Family Email Service</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            text-align: center;
-            padding-top: 100px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Family Email Service</h1>
-        <p>This domain is used for a family email service.</p>
-        <p>If you would like to get in touch with the owner, please email: <a href="mailto:webmaster@thefamilyplan.xyz">webmaster@thefamilyplan.xyz</a></p>
-        <p>If you would like to purchase an email address, please email: <a href="mailto:get_an_email@thefamilyplan.xyz">get_an_email@thefamilyplan.xyz</a></p>
-    </div>
-</body>
-</body>
   <meta charset="UTF-8">
-  <title>Smiley with Rainbow</title>
+  <title>Family Email Service</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background: #e0f7fa;
+      color: #333;
+    }
+
+    /* Rainbow & Smiley Section */
+    .top-section {
+      height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden;
-      flex-direction: column;
+      text-align: center;
+      padding: 40px;
     }
 
     .rainbow {
@@ -98,14 +79,53 @@
       border-bottom: 5px solid black;
       border-radius: 0 0 50px 50px;
     }
+
+    .scroll-link {
+      margin-top: 40px;
+      font-size: 1.2em;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    /* Email Section */
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 100px 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .container a {
+      color: #2980b9;
+    }
   </style>
 </head>
 <body>
-  <div class="rainbow"></div>
-  <div class="smiley">
-    <div class="eye left"></div>
-    <div class="eye right"></div>
-    <div class="smile"></div>
+
+  <!-- Rainbow and Smiley Section -->
+  <div class="top-section">
+    <div class="rainbow"></div>
+    <div class="smiley">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="smile"></div>
+    </div>
+    <a href="#email-section" class="scroll-link">Scroll down ↓</a>
   </div>
+
+  <!-- Family Email Info Section -->
+  <div class="container" id="email-section">
+    <h1>Family Email Service</h1>
+    <p>This domain is used for a family email service.</p>
+    <p>If you would like to get in touch with the owner, please email: 
+      <a href="mailto:webmaster@thefamilyplan.xyz">webmaster@thefamilyplan.xyz</a></p>
+    <p>If you would like to purchase an email address, please email: 
+      <a href="mailto:get_an_email@thefamilyplan.xyz">get_an_email@thefamilyplan.xyz</a></p>
+    <a href="#" class="scroll-link">Back to top ↑</a>
+  </div>
+
 </body>
 </html>
