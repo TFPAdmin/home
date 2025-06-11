@@ -21,19 +21,23 @@
     }
 
     header h1 {
-      margin: 0 0 10px;
+      margin: 0 0 20px;
       font-size: 2.5em;
     }
 
     header ul {
-      list-style-type: none;
+      list-style: none;
       padding: 0;
-      margin: 0 auto;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
       font-size: 1.2em;
+      flex-wrap: wrap;
     }
 
     header ul li {
-      margin: 5px 0;
+      margin: 0;
     }
 
     .main-section {
@@ -136,14 +140,19 @@
       .left-side, .right-side {
         max-width: 100%;
       }
+
+      header ul {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with Domain List -->
+  <!-- Header with Side-by-Side Domain List -->
   <header>
-    <h1>Domains in Use</h1>
+    <h1>Our Domains</h1>
     <ul>
       <li><strong>thefamilyplan.xyz</strong></li>
       <li><strong>thereedfamily.xyz</strong></li>
@@ -166,11 +175,11 @@
     <!-- Right Side: Text -->
     <div class="right-side">
       <p>
-        The following domains, <strong>thefamilyplan.xyz</strong>, <strong>thereedfamily.xyz</strong>, and <strong>hodgesfamily.xyz</strong>, are used as a private and personalized email service for me and my family.
+        The above domains are used as a more personalized email service for me and my family.
       </p>
       <p>
         If you are interested in obtaining an email using one of those domains, please reach out to me at 
-        <a href="mailto:email_purchases@thefamilyplan.xyz">email_purchases@thefamilyplan.xyz</a> to discuss pricing.
+        <a href="mailto:email_purchases@thefamilyplan.xyz">email.purchases@thefamilyplan.xyz</a> to discuss pricing.
       </p>
       <p>
         If you are interested in helping me build a website, kindly fuck off and have a shitty day.
