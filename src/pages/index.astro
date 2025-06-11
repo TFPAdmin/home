@@ -8,7 +8,32 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #e0f7fa;
-      color: #333;
+      color: #222;
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.5em;
+    }
+
+    header ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto;
+      font-size: 1.2em;
+    }
+
+    header ul li {
+      margin: 5px 0;
     }
 
     .main-section {
@@ -17,24 +42,24 @@
       min-height: 100vh;
       align-items: center;
       justify-content: center;
-      padding: 40px;
+      padding: 60px 40px;
     }
 
     .left-side {
-      flex: 1 1 300px;
+      flex: 1 1 400px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      max-width: 400px;
+      max-width: 500px;
       margin: 20px;
     }
 
     .rainbow {
       position: relative;
-      width: 300px;
-      height: 150px;
-      border-radius: 150px 150px 0 0;
+      width: 400px;
+      height: 200px;
+      border-radius: 200px 200px 0 0;
       background: conic-gradient(
         red 0deg 60deg,
         orange 60deg 120deg,
@@ -44,72 +69,68 @@
         indigo 300deg 330deg,
         violet 330deg 360deg
       );
-      margin-bottom: -60px;
+      margin-bottom: -80px;
       z-index: 1;
     }
 
     .smiley {
-      width: 200px;
-      height: 200px;
+      width: 280px;
+      height: 280px;
       background-color: yellow;
       border-radius: 50%;
       position: relative;
-      box-shadow: 0 0 20px #888;
+      box-shadow: 0 0 25px #888;
       z-index: 2;
     }
 
     .eye {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       background-color: black;
       border-radius: 50%;
       position: absolute;
-      top: 60px;
+      top: 80px;
     }
 
     .eye.left {
-      left: 50px;
+      left: 70px;
     }
 
     .eye.right {
-      right: 50px;
+      right: 70px;
     }
 
     .smile {
       position: absolute;
-      bottom: 40px;
+      bottom: 60px;
       left: 50%;
-      width: 100px;
-      height: 50px;
-      margin-left: -50px;
-      border-bottom: 5px solid black;
-      border-radius: 0 0 50px 50px;
+      width: 140px;
+      height: 60px;
+      margin-left: -70px;
+      border-bottom: 6px solid black;
+      border-radius: 0 0 70px 70px;
     }
 
     .right-side {
-      flex: 1 1 400px;
-      max-width: 600px;
+      flex: 1 1 500px;
+      max-width: 700px;
       margin: 20px;
-      padding: 40px 20px;
+      padding: 60px 30px;
       background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .right-side p {
-      font-size: 1.1em;
-      line-height: 1.6;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
     }
 
     .right-side a {
       color: #0077cc;
       text-decoration: underline;
+      word-break: break-all;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .main-section {
         flex-direction: column;
-        padding: 20px;
+        padding: 30px 20px;
       }
 
       .left-side, .right-side {
@@ -120,8 +141,19 @@
 </head>
 <body>
 
+  <!-- Header with Domain List -->
+  <header>
+    <h1>Domains in Use</h1>
+    <ul>
+      <li><strong>thefamilyplan.xyz</strong></li>
+      <li><strong>thereedfamily.xyz</strong></li>
+      <li><strong>hodgesfamily.xyz</strong></li>
+    </ul>
+  </header>
+
+  <!-- Main Content Area -->
   <div class="main-section">
-    <!-- Left Side: Rainbow & Smiley -->
+    <!-- Left Side: Rainbow + Smiley -->
     <div class="left-side">
       <div class="rainbow"></div>
       <div class="smiley">
@@ -134,7 +166,7 @@
     <!-- Right Side: Text -->
     <div class="right-side">
       <p>
-        The following domains, <strong>thefamilyplan.xyz</strong>, <strong>thereedfamily.xyz</strong>, <strong>hodgesfamily.xyz</strong>, are used as a private and personalized email service for me and my family.
+        The following domains, <strong>thefamilyplan.xyz</strong>, <strong>thereedfamily.xyz</strong>, and <strong>hodgesfamily.xyz</strong>, are used as a private and personalized email service for me and my family.
       </p>
       <p>
         If you are interested in obtaining an email using one of those domains, please reach out to me at 
