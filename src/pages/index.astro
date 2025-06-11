@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Family Email Service</title>
+  <title>The Family Plan Domains</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #e0f7fa;
+      background-color: #e0f7fa;
       color: #333;
     }
 
-    /* Horizontal Layout Section */
     .main-section {
       display: flex;
       flex-wrap: wrap;
@@ -21,7 +20,7 @@
       padding: 40px;
     }
 
-    .image-area {
+    .left-side {
       flex: 1 1 300px;
       display: flex;
       flex-direction: column;
@@ -46,6 +45,7 @@
         violet 330deg 360deg
       );
       margin-bottom: -60px;
+      z-index: 1;
     }
 
     .smiley {
@@ -55,7 +55,7 @@
       border-radius: 50%;
       position: relative;
       box-shadow: 0 0 20px #888;
-      margin-bottom: 20px;
+      z-index: 2;
     }
 
     .eye {
@@ -86,31 +86,43 @@
       border-radius: 0 0 50px 50px;
     }
 
-    .text-area {
-      flex: 1 1 300px;
+    .right-side {
+      flex: 1 1 400px;
       max-width: 600px;
-      background-color: white;
-      padding: 40px 20px;
       margin: 20px;
+      padding: 40px 20px;
+      background-color: white;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    .text-area h1 {
-      margin-top: 0;
+    .right-side p {
+      font-size: 1.1em;
+      line-height: 1.6;
     }
 
-    .text-area a {
-      color: #2980b9;
+    .right-side a {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .main-section {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .left-side, .right-side {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Horizontal Layout Section -->
   <div class="main-section">
-    <!-- Left Side: Image -->
-    <div class="image-area">
+    <!-- Left Side: Rainbow & Smiley -->
+    <div class="left-side">
       <div class="rainbow"></div>
       <div class="smiley">
         <div class="eye left"></div>
@@ -120,13 +132,17 @@
     </div>
 
     <!-- Right Side: Text -->
-    <div class="text-area">
-      <h1>Family Email Service</h1>
-      <p>This domain is used for a family email service.</p>
-      <p>If you would like to get in touch with the owner, please email: 
-        <a href="mailto:webmaster@thefamilyplan.xyz">webmaster@thefamilyplan.xyz</a></p>
-      <p>If you would like to purchase an email address, please email: 
-        <a href="mailto:get_an_email@thefamilyplan.xyz">get_an_email@thefamilyplan.xyz</a></p>
+    <div class="right-side">
+      <p>
+        The following domains, <strong>thefamilyplan.xyz</strong>, <strong>thereedfamily.xyz</strong>, <strong>hodgesfamily.xyz</strong>, are used as a private and personalized email service for me and my family.
+      </p>
+      <p>
+        If you are interested in obtaining an email using one of those domains, please reach out to me at 
+        <a href="mailto:email_purchases@thefamilyplan.xyz">email_purchases@thefamilyplan.xyz</a> to discuss pricing.
+      </p>
+      <p>
+        If you are interested in helping me build a website, kindly fuck off and have a shitty day.
+      </p>
     </div>
   </div>
 
